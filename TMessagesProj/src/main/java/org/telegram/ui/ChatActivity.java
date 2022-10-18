@@ -23067,12 +23067,12 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
                     TextView tv = new TextView(contentView.getContext());
                     tv.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 14);
                     tv.setTextColor(getThemedColor(Theme.key_actionBarDefaultSubmenuItem));
-                    if (getMessagesController().isChatNoForwards(currentChat)) {
+                    /*if (getMessagesController().isChatNoForwards(currentChat)) {
                         tv.setText(isChannel ? LocaleController.getString("ForwardsRestrictedInfoChannel", R.string.ForwardsRestrictedInfoChannel) :
                                 LocaleController.getString("ForwardsRestrictedInfoGroup", R.string.ForwardsRestrictedInfoGroup));
                     } else {
                         tv.setText(LocaleController.getString("ForwardsRestrictedInfoBot", R.string.ForwardsRestrictedInfoBot));
-                    }
+                    }*/
                     tv.setMaxWidth(popupLayout.getMeasuredWidth() - AndroidUtilities.dp(38));
 
                     Drawable shadowDrawable2 = ContextCompat.getDrawable(contentView.getContext(), R.drawable.popup_fixed_alert).mutate();

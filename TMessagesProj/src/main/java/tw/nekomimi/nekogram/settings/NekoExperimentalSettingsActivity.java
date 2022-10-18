@@ -79,7 +79,7 @@ public class NekoExperimentalSettingsActivity extends BaseFragment {
     private final AbstractConfigCell mediaPreviewRow = cellGroup.appendCell(new ConfigCellTextCheck(NekoConfig.mediaPreview));
     private final AbstractConfigCell proxyAutoSwitchRow = cellGroup.appendCell(new ConfigCellTextCheck(NekoConfig.proxyAutoSwitch));
     private final AbstractConfigCell disableFilteringRow = cellGroup.appendCell(new ConfigCellCustom(CellGroup.ITEM_TYPE_TEXT_CHECK, true));
-    //    private final NekomuraTGCell ignoreContentRestrictionsRow = addNekomuraTGCell(nkmrCells.new NekomuraTGTextCheck(NekoConfig.ignoreContentRestrictions, LocaleController.getString("IgnoreContentRestrictionsNotice")));
+    private final AbstractConfigCell ignoreContentRestrictionsRow = cellGroup.appendCell(new ConfigCellTextCheck(NekoConfig.ignoreContentRestrictions, LocaleController.getString("IgnoreContentRestrictionsNotice")));
     private final AbstractConfigCell unlimitedFavedStickersRow = cellGroup.appendCell(new ConfigCellTextCheck(NekoConfig.unlimitedFavedStickers, LocaleController.getString("UnlimitedFavoredStickersAbout")));
     private final AbstractConfigCell unlimitedPinnedDialogsRow = cellGroup.appendCell(new ConfigCellTextCheck(NekoConfig.unlimitedPinnedDialogs, LocaleController.getString("UnlimitedPinnedDialogsAbout")));
     private final AbstractConfigCell enableStickerPinRow = cellGroup.appendCell(new ConfigCellTextCheck(NekoConfig.enableStickerPin, LocaleController.getString("EnableStickerPinAbout")));
